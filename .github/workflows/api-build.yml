@@ -2,9 +2,6 @@ name: api-build
 
 on:
   push:
-        paths:
-            -".github/workflows/api-build.yml"
-            -"DemoApi/**"
   workflow_dispatch: #manual
 
 jobs:

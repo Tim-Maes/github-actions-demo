@@ -4,7 +4,7 @@ on:
   push:
         paths:
             -".github/workflows/api-build.yml"
-            -"api/**"
+            -"DemoApi/**"
   workflow_dispatch: #manual
 
 jobs:
@@ -16,4 +16,4 @@ jobs:
             - run: dotnet --list-runtimes
             - run: dotnet --list-sdks
             - run: dotnet build
-              working-directory: ./api
+              working-directory: ./DemoApi

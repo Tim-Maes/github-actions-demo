@@ -14,3 +14,5 @@ jobs:
             - run: dotnet --list-sdks
             - run: dotnet build
               working-directory: ./DemoApi
+            - run: dotnet test
+              working-directory: ./DemoApi
